@@ -14,9 +14,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <seleniu.version>4.13.0</seleniu.version>
+        <javafaker.version>1.0.2</javafaker.version>
     </properties>
 
+
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>${javafaker.version}</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -52,6 +61,7 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-safari-driver</artifactId>
             <version>${seleniu.version}</version>
+
         </dependency>
 
     </dependencies>
