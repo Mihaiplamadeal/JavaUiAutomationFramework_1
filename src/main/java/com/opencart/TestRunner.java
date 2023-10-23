@@ -2,10 +2,7 @@ package com.opencart;
 
 import com.opencart.managers.DataGenerator;
 import com.opencart.managers.DriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WindowType;
+import org.openqa.selenium.*;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -17,10 +14,10 @@ public class TestRunner {
 //New Window Code
         driver.switchTo().newWindow(WindowType.TAB);
 
-        driver.get("https://opencart.antropy.co.uk/");
+        driver.get("http://andreisecuqa.host/");
 
         Thread.sleep(1000);
-        WebElement myAccountIcon = driver.findElement(By.xpath("//i[@class='fa fa-user']"));
+        WebElement myAccountIcon = driver.findElement(By.xpath("//i[@class='fa-solid fa-user']"));
         myAccountIcon.click();
         WebElement registerOption = driver.findElement(By.xpath("(//a[normalize-space()='Register'])[1]"));
         registerOption.click();
@@ -45,28 +42,25 @@ public class TestRunner {
         emailInput.sendKeys(randomEmail);
         System.out.println(randomEmail);
 
-        WebElement phoneInput = driver.findElement(By.cssSelector("#input-telephone"));
-
-        phoneInput.sendKeys(DataGenerator.generatePhoneNumber());
-
         WebElement passwordInput = driver.findElement(By.cssSelector("#input-password"));
 
         String password = DataGenerator.generatePassword();
         passwordInput.sendKeys(password);
-
-        WebElement confirmPasswordInput = driver.findElement(By.cssSelector("#input-confirm"));
-        confirmPasswordInput.sendKeys(password);
         System.out.println(password);
 
-        WebElement termsAndConditionsCheckBox = driver.findElement(By.xpath("//input[@name='agree']"));
-        termsAndConditionsCheckBox.click();
 
-        WebElement registerBtn = driver.findElement(By.xpath("//input[@value='Continue']"));
+        WebElement termsAndConditionsToggleBar = driver.findElement(By.cssSelector("input[value='1'][name='agree']"));
+        termsAndConditionsToggleBar.click();
+
+
+        JavascriptExecutor je = (JavascriptExecutor) driver;
+        je.executeScript("arguments[0].scrollIntoView(true);", termsAndConditionsToggleBar);
+        Thread.sleep(1000);
+        termsAndConditionsToggleBar.click();
+
+        WebElement registerBtn = driver.findElement(By.cssSelector("button[type='submit']"));
+
         registerBtn.click();
-
-
-        Thread.sleep(5000);
-
         System.out.println(driver.getTitle());
 
         driver.close();
@@ -80,5 +74,5 @@ public class TestRunner {
 //        driver.quit();
 //        System.out.println("The execusion is over");
 
-        }
     }
+}
