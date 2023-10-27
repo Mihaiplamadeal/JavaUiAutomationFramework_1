@@ -37,7 +37,6 @@ public class TestRegistrationFlowWithJunit {
     @DisplayName("The registration of a new user with valid data redirects to the Account Page")
     public void registerWithValidCredentialsTest() throws InterruptedException {
         System.out.println("This is the test number 1");
-        WebDriver driver = DriverManager.getInstance().getDriver();
 
         String firstName = DataGenerator.generateFirstName();
         System.out.println(firstName);
@@ -56,20 +55,14 @@ public class TestRegistrationFlowWithJunit {
         System.out.println(password);
 
         registerPage.fillInTheRegisterForm(firstName, lastName, randomEmail, password, true);
-
-
-        WebElement termsAndConditionsToggleBar = driver.findElement(By.cssSelector("input[value='1'][name='agree']"));
-        termsAndConditionsToggleBar.click();
-
-
-        String currentUrl = driver.getCurrentUrl();
         registerPage.clickTheContinueBtn();
-//        driver.quit();
-//        System.out.println("The execusion is over");
 
-        boolean isTheCorrectUrlEmpty = currentUrl.isEmpty();
+        Thread.sleep(500);
+        String currentUrl = driver.getCurrentUrl();
 
-        Assertions.assertFalse(isTheCorrectUrlEmpty, "The current is not empty");
+        boolean doesCurrentUrlContainAccountKeyword = currentUrl.contains("route=account/success");
+
+        Assertions.assertTrue(doesCurrentUrlContainAccountKeyword, "The correct account url is displayed");
 
 
 
@@ -79,15 +72,6 @@ public class TestRegistrationFlowWithJunit {
     @DisplayName("The user is remaining on Register Page when trying to register with invalid password")
     public void registerWithInvalidPasswordTest() throws InterruptedException {
         System.out.println("This is the test number 2");
-        WebDriver driver = DriverManager.getInstance().getDriver();
-
-        driver.get("http://andreisecuqa.host/");
-
-        HomePage homePage = new HomePage(driver);
-
-
-        RegisterPage registerPage = new RegisterPage(driver);
-
 
         String firstName = DataGenerator.generateFirstName();
         System.out.println(firstName);
@@ -105,24 +89,21 @@ public class TestRegistrationFlowWithJunit {
 
         System.out.println(password);
 
-        registerPage.fillInTheRegisterForm(firstName, lastName, randomEmail, password, true);
-
-
-        WebElement termsAndConditionsToggleBar = driver.findElement(By.cssSelector("input[value='1'][name='agree']"));
-        termsAndConditionsToggleBar.click();
+        registerPage.fillInTheRegisterForm(firstName, lastName, randomEmail, "123", true);
 
 
         registerPage.clickTheContinueBtn();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         String actualUrl = driver.getCurrentUrl();
         String expectedUrl = "https://andreisecuqa.host/index.php?route=account/register&language=en-gb";
-
-        Assertions.assertEquals(expectedUrl, actualUrl, "The message should be equals");
+        System.out.println(expectedUrl);
+        System.out.println(actualUrl);
+        Assertions.assertTrue(actualUrl.contains(expectedUrl), "The message should be equals");
     }
 
     @AfterEach
     public void afterEachTestCase(){
-
+        DriverManager.getInstance().tearDown();
         System.out.println("The test case execution has been finished");
     }
 
