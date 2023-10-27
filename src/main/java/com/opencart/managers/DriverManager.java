@@ -39,19 +39,21 @@ public class DriverManager {
         }
     }
 
-    public static DriverManager getInstance(){
-        if (instance == null){
+    public static DriverManager getInstance() {
+        if (instance == null) {
             instance = new DriverManager();
         }
         return instance;
     }
-public WebDriver getDriver(){
+
+    public WebDriver getDriver() {
         return driver;
+    }
 
-//        public void tearDown(){
-//driver.quit();
-//driver = null;
-
+    public void tearDown() {
+        driver.quit();
+        driver = null;
+        instance = null;
     }
 
 }
