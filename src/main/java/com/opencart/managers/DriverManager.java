@@ -18,6 +18,7 @@ public class DriverManager {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("ignore-certificate-errors");
                 options.addArguments("--start-maximized");
+
                 driver = new ChromeDriver(options);
                 System.out.println("The Chrome Driver is initiated");
                 break;
@@ -54,6 +55,16 @@ public class DriverManager {
         driver.quit();
         driver = null;
         instance = null;
+    }
+
+    public void deleteCookies(){
+        driver.manage().deleteAllCookies();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
 }

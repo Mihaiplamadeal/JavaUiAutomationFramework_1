@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3552b9d9-9e09-4af4-a736-2c5976502a02" name="Changes" comment="Added 2 tests for registration flow">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opencart/features/Login.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opencart/pageobjects/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opencart/stepdefinitions/LoginPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/CucumberTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/CucumberTestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/features/Register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/features/Register.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/managers/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/managers/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/stepdefinitions/GenericSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/stepdefinitions/GenericSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/stepdefinitions/Hook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/stepdefinitions/Hook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/stepdefinitions/RegisterPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/stepdefinitions/RegisterPageSteps.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Program Files/Maven/apache-maven-3.8.8" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2Wi6ciNMlQ2O5m7OhSAN5CAlof3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "TA-6__Generic__Steps__for__Cucumber__Implementation",
+    "ignore.virus.scanning.warn.message": "true",
+    "onboarding.tips.debug.path": "C:/Users/user/IdeaProjects/JavaUiAutomationFramework_1/src/main/java/com/opencart/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.opencart.stepdefinitions" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: The Account Page Url is opened when the registration is successful">
+    <configuration name="Scenario: The Account Page Url is opened when the registration is successful" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/java/com/opencart/features/Register.feature" />
+      <option name="GLUE" value="com.opencart.stepdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="JavaUiAutomationFramework_1" />
+      <option name="NAME_FILTER" value="^The Account Page Url is opened when the registration is successful$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^The Account Page Url is opened when the registration is successful$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: The Account Page Url is opened when the registration is successful" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CucumberTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaUiAutomationFramework_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.opencart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.opencart" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.CucumberTestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRegistrationFlowWithJunit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaUiAutomationFramework_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.opencart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.opencart" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.TestRegistrationFlowWithJunit" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRegistrationFlowWithJunit.registerWithInvalidPasswordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaUiAutomationFramework_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.opencart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.opencart" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.TestRegistrationFlowWithJunit" />
+      <option name="METHOD_NAME" value="registerWithInvalidPasswordTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRegistrationFlowWithJunit.registerWithValidCredentialsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaUiAutomationFramework_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.opencart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.opencart" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.TestRegistrationFlowWithJunit" />
+      <option name="METHOD_NAME" value="registerWithValidCredentialsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: The Account Page Url is opened when the registration is successful" />
+        <item itemvalue="JUnit.CucumberTestRunner" />
+        <item itemvalue="JUnit.TestRegistrationFlowWithJunit" />
+        <item itemvalue="JUnit.TestRegistrationFlowWithJunit.registerWithInvalidPasswordTest" />
+        <item itemvalue="JUnit.TestRegistrationFlowWithJunit.registerWithValidCredentialsTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3552b9d9-9e09-4af4-a736-2c5976502a02" name="Changes" comment="" />
+      <created>1697203169575</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697203169575</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Set up UI ATF framework structure">
+      <option name="closed" value="true" />
+      <created>1697203925241</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697203925242</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Implement the Driver Manager and configure the Selenium dependencies">
+      <option name="closed" value="true" />
+      <created>1697449719722</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697449719722</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Implemented the FakeDataManager and create the first scenario.">
+      <option name="closed" value="true" />
+      <created>1697627038509</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697627038509</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implemented the Page Object and PageFactory design patterns">
+      <option name="closed" value="true" />
+      <created>1698064651676</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698064651676</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added 2 tests for registration flow">
+      <option name="closed" value="true" />
+      <created>1698240993466</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698240993466</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added 2 tests for registration flow">
+      <option name="closed" value="true" />
+      <created>1698423751418</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698423751418</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Set up UI ATF framework structure" />
+    <MESSAGE value="Implement the Driver Manager and configure the Selenium dependencies" />
+    <MESSAGE value="Implemented the FakeDataManager and create the first scenario." />
+    <MESSAGE value="Implemented the Page Object and PageFactory design patterns" />
+    <MESSAGE value="Added 2 tests for registration flow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added 2 tests for registration flow" />
+  </component>
+</project>
